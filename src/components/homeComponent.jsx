@@ -3,7 +3,7 @@ import React from "react";
 export const HomeContent = () => {
   return (
     <>
-      <div className="bg-white min-h-screen flex justify-center items-center">
+      <div className="px-20  bg-white min-h-screen flex justify-center items-center">
         <div className="mb-9">
           <h1 className="mb-4  font-extrabold text-6xl  text-transparent bg-clip-text bg-gradient-to-r  from-teal-400 to-white">
             Nithin
