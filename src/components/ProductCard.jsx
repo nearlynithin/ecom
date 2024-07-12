@@ -3,10 +3,8 @@ import React from "react";
 const productCard = () => {
   return (
     <div>
-      <div class="w-80 bg-white shadow rounded border border-transparent hover:border-blue-500 cursor-pointer">
-        <div
-          class="h-48 w-full bg-gray-200 flex flex-col justify-between p-4 bg-cover bg-center"
-        >
+      <div class="w-80 bg-white shadow rounded-2xl hover:border-slate-700 cursor-pointer transform transition hover:scale-105">
+        <div class="h-48 w-full bg-gray-200 flex flex-col justify-between p-4 bg-cover bg-center rounded-t-2xl">
           <div>
             <input type="checkbox" />
           </div>
