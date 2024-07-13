@@ -12,7 +12,7 @@ const Navbar = () => {
     <div className="bg-slate-100 px-4 mx-auto max-w-8xl sm:px-6 ">
       <div className="relative pt-10 pb-10 sm:pb-10">
         <nav
-          className=" relative flex items-center justify-between sm:h-10 md:justify-center"
+          className="relative flex items-center justify-between sm:h-10 md:justify-center"
           aria-label="Global"
         >
           <div className="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0">
@@ -77,31 +77,41 @@ const Navbar = () => {
               Login
             </a>
           </div>
-          {isMenuOpen && (
-            <div className="absolute top-16 left-0 w-full bg-white md:hidden">
-              <ul className="flex flex-col p-4 space-y-4 list-none">
-                <a
-                  href="search"
-                  className="text-base font-normal text-gray-500 list-none hover:text-gray-900"
-                >
-                  Search
-                </a>
-                <a
-                  href="profile"
-                  className="text-base font-normal text-gray-500 list-none hover:text-gray-900"
-                >
-                  Profile
-                </a>
-                <a
-                  href="home"
-                  className="text-base font-normal text-gray-500 list-none hover:text-gray-900"
-                >
-                  home
-                </a>
-              </ul>
-            </div>
-          )}
         </nav>
+        {isMenuOpen && (
+          <div className="md:hidden">
+            <a
+              href="search"
+              className="block text-base font-normal text-gray-500 list-none hover:text-gray-900 mb-2 transition hover:scale-90"
+            >
+              Search
+            </a>
+            <a
+              href="profile"
+              className="block text-base font-normal text-gray-500 list-none hover:text-gray-900 mb-2 transition hover:scale-90"
+            >
+              Profile
+            </a>
+            <a
+              href="home"
+              className="block text-base font-normal text-gray-500 list-none hover:text-gray-900 mb-2 transition hover:scale-90"
+            >
+              Home
+            </a>
+            <a
+              href="signup"
+              className="block text-base font-normal text-gray-500 list-none hover:text-gray-900 mb-2 transition hover:scale-90"
+            >
+              Sign up
+            </a>
+            <a
+              href="login"
+              className="block text-base font-normal text-gray-500 list-none hover:text-gray-900 transition hover:scale-90"
+            >
+              Login
+            </a>
+          </div>
+        )}
       </div>
     </div>
   );
