@@ -29,7 +29,6 @@ const Navbar = () => {
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
                     viewBox="0 0 24 24"
                     strokeWidth="2"
                     stroke="currentColor"
@@ -47,64 +46,46 @@ const Navbar = () => {
             </div>
           </div>
           <div className="hidden md:flex md:space-x-10 list-none">
-            <li>
-              <a
-                href="search"
-                className="text-base font-normal text-gray-500 list-none hover:text-gray-900"
-                target=""
-              >
-                Search
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="text-base font-normal text-gray-500 list-none hover:text-gray-900"
-                target=""
-              >
-                Gallery
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="text-base font-normal text-gray-500 list-none hover:text-gray-900"
-                target="_blank"
-              >
-                Blog
-              </a>
-            </li>
+            <a
+              href="search"
+              className="text-base font-normal text-gray-500 list-none hover:text-gray-900"
+            >
+              Search
+            </a>
+            <a
+              href="profile"
+              className="text-base font-normal text-gray-500 list-none hover:text-gray-900"
+            >
+              Profile
+            </a>
+            <a
+              href="home"
+              className="text-base font-normal text-gray-500 list-none hover:text-gray-900"
+            >
+              Home
+            </a>
           </div>
           {isMenuOpen && (
             <div className="absolute top-16 left-0 w-full bg-white md:hidden">
               <ul className="flex flex-col p-4 space-y-4 list-none">
-                <li>
-                  <a
-                    href="search"
-                    className="text-base font-normal text-gray-500 list-none hover:text-gray-900"
-                    target=""
-                  >
-                    Search
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="text-base font-normal text-gray-500 list-none hover:text-gray-900"
-                    target=""
-                  >
-                    Gallery
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="text-base font-normal text-gray-500 list-none hover:text-gray-900"
-                    target="_blank"
-                  >
-                    Blog
-                  </a>
-                </li>
+                <a
+                  href="search"
+                  className="text-base font-normal text-gray-500 list-none hover:text-gray-900"
+                >
+                  Search
+                </a>
+                <a
+                  href="profile"
+                  className="text-base font-normal text-gray-500 list-none hover:text-gray-900"
+                >
+                  Profile
+                </a>
+                <a
+                  href="home"
+                  className="text-base font-normal text-gray-500 list-none hover:text-gray-900"
+                >
+                  home
+                </a>
               </ul>
             </div>
           )}
