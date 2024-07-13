@@ -31,3 +31,17 @@ body {
     text-wrap: balance;
   }
 }
+
+@font-face {
+  font-family: "OstrichSans";
+  src: url("/fonts/OstrichSans-Black.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PlaywriteBEVLG";
+  src: url("/fonts/PlaywriteBEVLG-VariableFont_wght.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
