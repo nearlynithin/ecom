@@ -4,10 +4,10 @@ const page = () => {
   return (
     <div className="bg-white min-h-screen">
       <h1 className="text-lime-900 pt-20 px-20 text-2xl font-medium ">
-        You can login to your existing account here :)
+        SignUp Here! :)
       </h1>
       <p className="text-stone-700 flex justify-center mt-10 font-mono">
-        Should also be redirected here if someone logs out
+        I think you can make an account here
       </p>
       <div class="py-16">
         <div class="flex bg-white rounded-lg shadow-lg overflow-hidden mx-auto max-w-sm lg:max-w-4xl">
@@ -40,16 +40,16 @@ const page = () => {
             </div>
             <div class="mt-8">
               <button class="bg-gray-700 text-white font-bold py-2 px-4 w-full rounded hover:bg-gray-600">
-                Login
+                Sign up!
               </button>
             </div>
             <div class="mt-4 flex items-center justify-between">
               <span class="border-b w-1/5 md:w-1/4"></span>
               <a
-                href="singup"
+                href="login"
                 class="text-xs text-gray-500 uppercase hover:text-cyan-400"
               >
-                or sign up
+                or login
               </a>
               <span class="border-b w-1/5 md:w-1/4"></span>
             </div>
