@@ -64,6 +64,18 @@ const Navbar = () => {
             >
               Home
             </a>
+            <a
+              href="signup"
+              className="text-base font-normal text-gray-500 list-none hover:text-gray-900"
+            >
+              Signup
+            </a>
+            <a
+              href="login"
+              className="text-base font-normal text-gray-500 list-none hover:text-gray-900"
+            >
+              Login
+            </a>
           </div>
           {isMenuOpen && (
             <div className="absolute top-16 left-0 w-full bg-white md:hidden">
