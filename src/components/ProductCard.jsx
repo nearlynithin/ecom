@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import AddToCart from "./AddToCart";
 
 const ProductCard = ({ name, description, url, productImage }) => {
   return (
@@ -15,7 +16,7 @@ const ProductCard = ({ name, description, url, productImage }) => {
             className="rounded-t-2xl"
           />
         </div>
-        
+
         <div className="relative z-10 h-48 w-full flex flex-col justify-between p-4 bg-cover bg-center rounded-t-2xl">
           <div>
             <input type="checkbox" />
@@ -60,6 +61,9 @@ const ProductCard = ({ name, description, url, productImage }) => {
           <span className="uppercase text-xs bg-green-50 p-0.5 border-green-500 border rounded text-green-700 font-medium">
             Approved
           </span>
+          <div className=" flex justify-end">
+            <AddToCart />
+          </div>
         </div>
       </div>
     </a>
