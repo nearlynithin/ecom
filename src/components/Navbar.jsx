@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React, { useState } from "react";
 
 const Navbar = () => {
@@ -46,36 +47,36 @@ const Navbar = () => {
             </div>
           </div>
           <div className="hidden md:flex md:space-x-10 list-none">
-            <a
+            <Link
               href="search"
               className="text-base font-normal text-gray-500 list-none hover:text-gray-900"
             >
               Search
-            </a>
-            <a
+            </Link>
+            <Link
               href="profile"
               className="text-base font-normal text-gray-500 list-none hover:text-gray-900"
             >
               Profile
-            </a>
-            <a
+            </Link>
+            <Link
               href="home"
               className="text-base font-normal text-gray-500 list-none hover:text-gray-900"
             >
               Home
-            </a>
-            <a
+            </Link>
+            <Link
               href="signup"
               className="text-base font-normal text-gray-500 list-none hover:text-gray-900"
             >
               Signup
-            </a>
-            <a
+            </Link>
+            <Link
               href="login"
               className="text-base font-normal text-gray-500 list-none hover:text-gray-900"
             >
               Login
-            </a>
+            </Link>
           </div>
         </nav>
         {isMenuOpen && (
