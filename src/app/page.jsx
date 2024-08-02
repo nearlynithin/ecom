@@ -1,9 +1,19 @@
 "use client";
+import { Suspense } from "react";
 import React from "react";
 import Button from "@components/Button";
 
-export const homePage = () => {
-  return <Button />;
+
+export default function homePage(){
+  return (
+    <Suspense fallback={<Loading />}>
+        <Button />   
+    </Suspense>
+  );
 };
 
-export default homePage;
+
+
+function Loading() {
+  return <h1> Loading ...</h1>
+}
