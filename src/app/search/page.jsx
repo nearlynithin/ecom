@@ -13,16 +13,20 @@ export const page = () => {
           respective page
         </p>
       </div>
+
+
       <div className="flex flex-wrap justify-center gap-10 pt-40 pb-40">
         <ProductCard
           name={"One Laptop"}
           description={"Trust me bro just buy this one"}
           url={"/products/1"}
+          productImage={"/assets/laptop2.png"}
         />
         <ProductCard
           name={"The other laptop"}
           description={"Nah Buy this, this is lit"}
           url={"/products/2"}
+          productImage={"/assets/laptop1.jpg"}
         />
         <ProductCard />
         <ProductCard />
