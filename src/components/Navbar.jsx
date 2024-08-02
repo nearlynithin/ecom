@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,6 +17,11 @@ const Navbar = () => {
           className="relative flex items-center justify-between sm:h-10 md:justify-center"
           aria-label="Global"
         >
+        <div className="flex flex-1 ">
+          <div className=" justify-start items-start inline-block drop-shadow-lg j ">
+            <Image src="/assets/ecom_logo.png" width={100} height={100} />
+          </div>
+        </div>
           <div className="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0">
             <div className="flex items-center justify-between w-full md:w-auto">
               <a href="#">
@@ -46,7 +52,7 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-          <div className="hidden md:flex md:space-x-10 list-none">
+          <div className="hidden md:flex md:space-x-10 ">
             <Link
               href="search"
               className="text-base font-normal text-gray-500 list-none hover:text-gray-900"

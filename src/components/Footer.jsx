@@ -1,10 +1,15 @@
 import React from "react";
+import Image from "next/image";
 
 const Footer = () => {
   return (
     <footer className="bg-white">
-      <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 bg-slate-200 ">
+      <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 bg-slate-100 ">
         <div className="lg:flex lg:items-start lg:gap-8">
+          <div className="inline-block drop-shadow-lg ">
+            <Image src="/assets/ecom_logo.png" width={100} height={100} />
+          </div>
+
           <div className="mt-8  gap-8 lg:mt-0 lg:grid-cols-5">
             <div className="col-span-2">
               <div>
@@ -12,7 +17,8 @@ const Footer = () => {
                   We have a Footer!
                 </h2>
                 <p className="mt-4 text-gray-500">
-                  Disclaimer: We guarantee instant buyer's remorse with every purchase. Think twice, click once. 🚫💸
+                  Disclaimer: We guarantee instant buyer's remorse with every
+                  purchase. Think twice, click once. 🚫💸
                 </p>
               </div>
             </div>
